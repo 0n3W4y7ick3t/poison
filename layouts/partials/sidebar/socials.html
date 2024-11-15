@@ -1,3 +1,10 @@
+{{ if .Site.Params.homepage_url }}
+    <a target="_blank" class="social" title="Homepage" href="{{ .Site.Params.homepage_url }}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="-2 -2 24 24">
+            <path fill="currentColor" d="M12 3L2 12h3v8h5v-6h4v6h5v-8h3L12 3zM4 11v9c0 .6.4 1 1 1h4c.6 0 1-.4 1-1v-5h4v5c0 .6.4 1 1 1h4c.6 0 1-.4 1-1v-9l-8-8-8 8z" rx="2"/>
+        </svg>
+    </a>
+{{ end }}
 {{ if .Site.Params.github_url }}
     <a target="_blank" class="social" title="GitHub" href="{{ .Site.Params.github_url }}">
         <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="-2 -2 24 24">
